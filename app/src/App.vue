@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <Login hugo="yeyeyeye"/>
+  <Login hugo="Fabian"/>
 </template>
 
 <script>
