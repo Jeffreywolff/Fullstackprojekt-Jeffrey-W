@@ -7,6 +7,11 @@ createApp(App).mount('#app')
 import VueRouter from 'vue-router';
 App.use(VueRouter);
 
+import VueAxios from 'vue-axios';
+import axios from 'axios';
+
+App.use(VueAxios, axios);
+
 VueRouter.config.Vue.config.productionTip = false;
 
 import LoginComponent from './components/LoginComponent.vue';
