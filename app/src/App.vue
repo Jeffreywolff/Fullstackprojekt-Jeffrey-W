@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Login hugo="Fabian"/>
+  <div>
+
+    <h1><router-link to="/chat"> Chat</router-link></h1>
+    <h1><router-link to="/"> Login</router-link></h1>
+
+  <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import Login from './components/Login.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Login
+    
   }
 }
 </script>

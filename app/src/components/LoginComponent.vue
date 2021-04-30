@@ -1,7 +1,7 @@
 <template>
-    <div class="Login">
-        <h1>Hello Hugo</h1>
-        <p>{{hugo}}</p> 
+    <div>
+        <h1>Hello Login</h1>
+        
     </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
     name: 'Login',
     props: {
-        hugo: String,
+        
     }
     
 }
