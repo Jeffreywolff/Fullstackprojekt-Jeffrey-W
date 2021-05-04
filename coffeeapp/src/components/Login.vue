@@ -1,11 +1,11 @@
 <template>
-    <div id="login-container" class="container-fluid d-flex justify-content-center align-items-center">
-        <p>Whether you’re a coffee fanatic,
+    <div id="login-container" class="container-fluid d-flex justify-content-center align-items-center justify-content-around">
+        <p><strong>Whether you’re a coffee fanatic,
             tea enthusiast,
             cookie monster,
             or just a student who likes studying at cafe's,
-            Coffee Chat makes it easy to talk to anyone and get answers for your future test.</p>
-        <div class="card" style="width: 20rem; height:65%;">
+            Coffee Chat makes it easy to talk to anyone and get answers for your future test.</strong> </p>
+        <div class="card" style="width: 22rem; height:65%;">
             <div class="card-body">
                 <h1 class="card-title">Login</h1>
                 <LoginForm></LoginForm>
@@ -25,15 +25,36 @@
         }
     }
 </script>
+
 <style scoped>
     * {}
 
     #login-container {
         height: 80vh;
         width: 100vw;
-        background: rgb(27, 1, 0);
-        background: linear-gradient(135deg, rgba(27, 1, 0, 1) 0%, rgba(161, 21, 0, 1) 41%, rgba(255, 0, 134, 1) 100%);
         padding: 0;
         margin: 0;
+        background: rgb(245,8,0);
+        background: linear-gradient(135deg, rgba(245,8,0,1) 0%, rgba(255,0,134,1) 23%, rgba(111,0,161,1) 46%, rgba(0,141,161,1) 71%, rgba(0,166,94,1) 91%);
+        background-size: 400%;
+        animation: gradient-move 30s infinite alternate;
+        
     }
+    p{
+        width: 500px;
+        color: #fff;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            background-position: left;
+        }
+
+        100%{
+            background-position: right;
+        }
+    }
+
+    
 </style>
+    
