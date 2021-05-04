@@ -18,11 +18,13 @@ import LoginComponent from './components/LoginComponent.vue';
 import ChatComponent from './components/ChatComponent.vue';
 
 
-const routes = [
+
+
+const router = new VueRouter({routes: [
 
     {
         name: 'login',
-        path: '/',
+        path: '/login',
         component: LoginComponent
     },
     {
@@ -31,8 +33,6 @@ const routes = [
         component: ChatComponent
     },
 
-];
+]});
 
-const router = new VueRouter({ mode: 'history', routes: routes});
-
-new App(App.util.extend({ router }, App)).$mount('#app');
+new App(App.util.extend({ mode: 'history', router }, App)).$mount('#app');

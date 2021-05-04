@@ -1,8 +1,8 @@
 <template>
   <div>
 
-    <h1><router-link to="/chat"> Chat</router-link></h1>
-    <h1><router-link to="/"> Login</router-link></h1>
+    <router-link :to="{path: '/chat'}">Chat</router-link>
+    <h1><router-link to="/" exact-path>Login</router-link></h1>
 
   <router-view></router-view>
   </div>
