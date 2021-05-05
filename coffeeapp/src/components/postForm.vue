@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form action="/" method="post" class="d-flex align-items-center justify-content-center flex-column">
+        <form action="/" method="post" class="d-flex align-items-center justify-content-center flex-column m-3">
 
 
         <div id="input-container" class="">
@@ -24,6 +24,10 @@
             <input type="password" placeholder="Password">
             
         </div>
+        
+        <span id="ForgotPass">
+            <a href=""> Forgot your password? </a>
+        </span>
 
         <button type="submit" value="Submit"><strong>Login</strong></button>
         
@@ -43,7 +47,6 @@ export default {
 
 <style scoped>
     input{
-        
         height: 35px;
     }
 
@@ -57,17 +60,32 @@ export default {
     }
 
     #input-container span{
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column;
     }
 
+    #input-container svg:hover{
+        fill: rgba(245,8,0,1);
+    }
+
+    #ForgotPass a{
+        text-decoration: none;
+        color: rgba(255,0,134,1);
+    }
+
+    #ForgotPass a:hover{
+        text-decoration-line: underline;
+        color: rgba(255,0,134,1);
+    }
+
     button{
         width: 35%;
         height: 40px;
+        margin: 5px;
         background: linear-gradient(135deg, rgba(245,8,0,1) 0%, rgba(255,0,134,1) 100%);
         
         color: #fff;
@@ -76,5 +94,7 @@ export default {
         border: none;
         
     }
+
+
 
 </style>

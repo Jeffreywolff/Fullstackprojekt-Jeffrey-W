@@ -4,8 +4,8 @@
             tea enthusiast,
             cookie monster,
             or just a student who likes studying at cafe's,
-            Coffee Chat makes it easy to talk to anyone and get answers for your future test.</strong> </p>
-        <div class="card" style="width: 22rem; height:65%;">
+            Coffee Chat makes it easy to talk to anyone and get answers for your future test or what delightfullness is the best.</strong> </p>
+        <div class="card" style="width: 22rem;">
             <div class="card-body">
                 <h1 class="card-title">Login</h1>
                 <LoginForm></LoginForm>
@@ -37,7 +37,7 @@
         background: rgb(245,8,0);
         background: linear-gradient(135deg, rgba(245,8,0,1) 0%, rgba(255,0,134,1) 23%, rgba(111,0,161,1) 46%, rgba(0,141,161,1) 71%, rgba(0,166,94,1) 91%);
         background-size: 400%;
-        animation: gradient-move 30s infinite alternate;
+        animation: gradient-move 20s infinite alternate;
         
     }
     p{
