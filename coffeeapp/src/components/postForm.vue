@@ -83,16 +83,19 @@ export default {
     }
 
     button{
-        width: 35%;
+        width: 70%;
         height: 40px;
         margin: 5px;
         background: linear-gradient(135deg, rgba(245,8,0,1) 0%, rgba(255,0,134,1) 100%);
-        
         color: #fff;
-        border-radius: 25px;
-        transition: 10s;
         border: none;
         
+    }
+
+    button:hover{
+
+        background: linear-gradient(135deg, rgba(106,3,0,1) 0%, rgba(128,0,67,1) 100%);
+
     }
 
 

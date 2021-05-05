@@ -5,7 +5,7 @@
             cookie monster,
             or just a student who likes studying at cafe's,
             Coffee Chat makes it easy to talk to anyone and get answers for your future test or what delightfullness is the best.</strong> </p>
-        <div class="card" style="width: 22rem;">
+        <div id="cardo" class="card" style="width: 22rem;">
             <div class="card-body">
                 <h1 class="card-title">Login</h1>
                 <LoginForm></LoginForm>
@@ -43,6 +43,13 @@
     p{
         width: 500px;
         color: #fff;
+    }
+
+    #cardo{
+
+        border-radius: 11px;
+        box-shadow: 5px 10px 30px #000;
+
     }
 
     @keyframes gradient-move {
