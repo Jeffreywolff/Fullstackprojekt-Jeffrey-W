@@ -4,29 +4,25 @@
 
 
         <div id="input-container" class="">
-            <span class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-            </svg>
-            </span>
-            <input type="text" placeholder="Email">
+            <div class="d-flex flex-column justify-content-start align-items-start">
+            <label for="email">Email</label>
+            <input type="text" placeholder="">
+            </div>
+            
             
         </div>
 
-
         <div id="input-container">
-            <span class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
-                    <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                </svg>
-            </span>
-            <input type="password" placeholder="Password">
+            
+            <div class="d-flex flex-column justify-content-start align-items-start">
+            <label for="password">Password</label>
+            <input type="password" placeholder="">
+            </div>
             
         </div>
         
         <span id="ForgotPass">
-            <a href=""> Forgot your password? </a>
+            <a href=""> Forgot password? </a>
         </span>
 
         <button type="submit" value="Submit"><strong>Login</strong></button>
@@ -46,9 +42,7 @@ export default {
 
 
 <style scoped>
-    input{
-        height: 35px;
-    }
+    
 
     #input-container{
         
@@ -56,37 +50,39 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-flow: column;
+        flex-flow: row;
     }
 
-    #input-container span{
-        width: 4rem;
-        height: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column;
+    
+
+    #input-container label:hover{
+        fill: rgba(24,126,240,1);
+        color: rgba(24,126,240,1);
     }
 
-    #input-container svg:hover{
-        fill: rgba(245,8,0,1);
+    #input-container input{
+        background-color: rgb(233, 233, 233);
+        border: 2px solid rgb(94, 94, 94);
+        height: 45px;
+        width: 100%;
+        
     }
 
     #ForgotPass a{
         text-decoration: none;
-        color: rgba(255,0,134,1);
+        color: rgb(24,126,240);
     }
 
     #ForgotPass a:hover{
         text-decoration-line: underline;
-        color: rgba(255,0,134,1);
     }
 
     button{
         width: 70%;
         height: 40px;
         margin: 5px;
-        background: linear-gradient(135deg, rgba(245,8,0,1) 0%, rgba(255,0,134,1) 100%);
+        background: rgb(24,126,240);
+        background: linear-gradient(45deg, rgba(24,126,240,1) 0%, rgb(61, 228, 243) 100%);
         color: #fff;
         border: none;
         
@@ -94,7 +90,8 @@ export default {
 
     button:hover{
 
-        background: linear-gradient(135deg, rgba(106,3,0,1) 0%, rgba(128,0,67,1) 100%);
+        background: rgb(24,126,240);
+        background: linear-gradient(45deg, rgb(13, 70, 136) 0%, rgb(93, 132, 136) 100%);
 
     }
 
