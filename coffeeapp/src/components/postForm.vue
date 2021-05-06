@@ -1,10 +1,10 @@
 <template>
     <div>
-        <form action="/" method="post" class="d-flex align-items-center justify-content-center flex-column m-3">
+        <form action="/" method="post" class="d-flex align-items-center flex-column">
 
 
         <div id="input-container" class="">
-            <div class="d-flex flex-column justify-content-start align-items-start">
+            <div class="d-flex flex-column align-items-start">
             <label for="email">Email</label>
             <input type="text" placeholder="">
             </div>
@@ -14,7 +14,7 @@
 
         <div id="input-container">
             
-            <div class="d-flex flex-column justify-content-start align-items-start">
+            <div class="d-flex flex-column align-items-start">
             <label for="password">Password</label>
             <input type="password" placeholder="">
             </div>
@@ -43,6 +43,9 @@ export default {
 
 <style scoped>
     
+    form{
+        width: 100%;
+    }
 
     #input-container{
         
@@ -61,10 +64,11 @@ export default {
     }
 
     #input-container input{
+        width: 300px;
         background-color: rgb(233, 233, 233);
-        border: 2px solid rgb(94, 94, 94);
+        border: 0px solid rgb(94, 94, 94);
         height: 45px;
-        width: 100%;
+        
         
     }
 

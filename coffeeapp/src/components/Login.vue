@@ -6,7 +6,7 @@
             or just a student who likes studying at cafe's,
             Coffee Chat makes it easy to talk to anyone and get answers for your future test or what delightfullness is the best.</strong> </p>
         <div id="cardo" class="card" style="width: 25rem;">
-            <div class="card-body">
+            <div class="card-body d-flex align-items-center flex-column">
                 <h1 class="card-title"> <strong>Account Login</strong></h1>
                 <LoginForm></LoginForm>
             </div>
@@ -29,6 +29,8 @@
 
 <style lang="css" scoped>
     * {}
+
+    
 
     #login-container {
         height: 80vh;
@@ -55,7 +57,7 @@
     #cardo{
 
         border-radius: 3px;
-        box-shadow: 5px 10px 20px #000;
+        box-shadow: 3px 3px 15px #000;
 
     }
 
