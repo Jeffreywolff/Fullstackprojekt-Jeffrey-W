@@ -67,9 +67,7 @@ export default {
         width: 300px;
         background-color: rgb(233, 233, 233);
         border: 0px solid rgb(94, 94, 94);
-        height: 45px;
-        
-        
+        height: 45px;        
     }
 
     #ForgotPass a{
