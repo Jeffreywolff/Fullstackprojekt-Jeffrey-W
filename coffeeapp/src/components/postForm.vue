@@ -42,13 +42,16 @@ export default {
 
 
 <style scoped>
+div{
+    width: 100%;
+}
     
     form{
-        width: 100%;
+        width: 100% !important;
     }
 
     #input-container{
-        
+        width: 90%;
         margin: 3%;
         display: flex;
         justify-content: center;
@@ -64,7 +67,7 @@ export default {
     }
 
     #input-container input{
-        width: 300px;
+        width: 100%;
         background-color: rgb(233, 233, 233);
         border: 0px solid rgb(94, 94, 94);
         height: 45px;        
