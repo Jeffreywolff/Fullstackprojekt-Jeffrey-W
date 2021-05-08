@@ -83,8 +83,8 @@ export default {
         width: 70%;
         height: 40px;
         margin: 5px;
-        background: rgb(24,126,240);
-        background: linear-gradient(45deg, rgba(24,126,240,1) 0%, rgb(61, 228, 243) 100%);
+        background: #F29C1F;
+        
         color: #fff;
         border: none;
         
@@ -92,11 +92,19 @@ export default {
 
     button:hover{
 
-        background: rgb(24,126,240);
-        background: linear-gradient(45deg, rgb(13, 70, 136) 0%, rgb(93, 132, 136) 100%);
+        background: rgb(160, 104, 21);
+        
 
     }
 
 
 
+/*
+background: rgb(24,126,240);
+background: linear-gradient(45deg, rgba(24,126,240,1) 0%, rgb(61, 228, 243) 100%);
+
+
+*/
+
 </style>
+
