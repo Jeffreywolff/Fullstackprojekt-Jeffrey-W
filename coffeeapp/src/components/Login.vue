@@ -11,7 +11,7 @@
                     delightfullness is the best.</strong> </p>
 
             <span class="w-50">
-                <svg id="coffeesvg" height="" viewBox="0 0 58 53" width="" xmlns="http://www.w3.org/2000/svg" class="container-fluid">
+                <svg height="" viewBox="0 0 58 53" width="" xmlns="http://www.w3.org/2000/svg" class="container-fluid">
                     <g id="Page-1" fill="none" fill-rule="evenodd">
                         <g id="038---Spilling-Coffee" fill-rule="nonzero" transform="translate(0 -2)">
                             <path id="Shape"
