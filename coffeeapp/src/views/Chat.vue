@@ -1,5 +1,6 @@
 <template>
   <div class="chat">
+    <Navbar></Navbar>
     
     <main>
 
@@ -23,3 +24,15 @@
 
   </div>
 </template>
+
+<script>
+import Navbar from '@/components/Navbar.vue'
+
+export default {
+  name: 'Chat',
+  components: {
+    Navbar,
+  }
+  
+}
+</script>

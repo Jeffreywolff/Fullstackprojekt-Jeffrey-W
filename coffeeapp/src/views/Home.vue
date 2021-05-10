@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Navbar id="nav"></Navbar>
     <Login></Login>
     <MainContent></MainContent>
     <Footer></Footer>
@@ -13,13 +14,15 @@
 import Login from '@/components/Login.vue'
 import MainContent from '@/components/MainContent.vue'
 import Footer from '@/components/Footer.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
   name: 'Home',
   components: {
     Login,
     MainContent,
-    Footer
+    Footer,
+    Navbar
     
   }
 }
@@ -31,6 +34,10 @@ export default {
    padding: 0;
    margin: 0;
    width: 0px;
+ }
+
+ #nav{
+   background-color: #FFDF87;
  }
 
 

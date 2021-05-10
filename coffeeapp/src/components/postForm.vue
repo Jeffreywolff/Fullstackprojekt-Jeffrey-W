@@ -1,7 +1,8 @@
 <template>
     <div>
         <form action="/" method="post" class="d-flex align-items-center flex-column">
-
+        
+         <h2 class="card-title"> <strong>Account Login</strong></h2>
 
         <div id="input-container" class="">
             <div class="d-flex flex-column align-items-start">
@@ -21,9 +22,10 @@
             
         </div>
         
-        <span id="ForgotPass">
-            <a href=""> Forgot password? </a>
-        </span>
+        <div id="ForgotPass" class="d-flex justify-content-end align-items-start">
+            <a href="">Forgot password? </a>
+            
+        </div>
 
         <button type="submit" value="Submit"><strong>Login</strong></button>
         
@@ -50,6 +52,11 @@ div{
         width: 100% !important;
     }
 
+    form h2{
+        width: 90%;
+        color: #1b75eb;
+    }
+
     #input-container{
         width: 90%;
         margin: 3%;
@@ -62,20 +69,27 @@ div{
     
 
     #input-container label:hover{
-        fill: rgba(24,126,240,1);
-        color: rgba(24,126,240,1);
+        fill: #1b75eb;
+        color: #1b75eb;
     }
 
     #input-container input{
         width: 100%;
         background-color: rgb(233, 233, 233);
         border: 0px solid rgb(94, 94, 94);
-        height: 45px;        
+        height: 45px; 
+        border-radius: 3px;       
+    }
+
+    #ForgotPass{
+        width: 90%;
     }
 
     #ForgotPass a{
+        
         text-decoration: none;
-        color: rgb(24,126,240);
+        color: #1b75eb;
+        font-size: 0.8rem;
     }
 
     #ForgotPass a:hover{
@@ -86,16 +100,17 @@ div{
         width: 70%;
         height: 40px;
         margin: 5px;
-        background: #F29C1F;
+        background: #1b75eb;
         
         color: #fff;
         border: none;
+        border-radius: 3px;
         
     }
 
     button:hover{
 
-        background: rgb(160, 104, 21);
+        background: #114d9b;
         
 
     }
