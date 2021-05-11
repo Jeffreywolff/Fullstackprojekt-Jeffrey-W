@@ -31,9 +31,7 @@ export default {
 <style scoped>
   
  #home{
-   padding: 0;
-   margin: 0;
-   width: 0px;
+   
  }
 
  #nav{
