@@ -110,7 +110,7 @@ div{
 
     button:hover{
 
-        background: #114d9b;
+        background: #80B5FB;
         
 
     }

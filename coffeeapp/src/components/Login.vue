@@ -84,7 +84,6 @@
 </script>
 
 <style lang="css" scoped>
-    #chat-bubble {}
 
     #coffee-msg {
         margin-left: 50px;
