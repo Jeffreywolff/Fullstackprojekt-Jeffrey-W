@@ -24,4 +24,6 @@ app.use(express.json());
 app.use('/posts', postRoute);
 
 
+
+
 app.listen(PORT, () => console.log(`\x1b[36m \n \nServer ip: http://localhost:${PORT}`));

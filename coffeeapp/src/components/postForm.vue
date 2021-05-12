@@ -22,8 +22,9 @@
             
         </div>
         
-        <div id="ForgotPass" class="d-flex justify-content-end align-items-start">
+        <div id="ForgotPass" class="d-flex justify-content-between">
             <a href="">Forgot password? </a>
+            <router-link to="/signup">Signup</router-link>
             
         </div>
 
