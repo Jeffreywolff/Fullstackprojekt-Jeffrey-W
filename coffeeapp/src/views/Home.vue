@@ -29,10 +29,7 @@ export default {
 </script>
 
 <style scoped>
-  
- #home{
-   
- }
+ 
 
  #nav{
    background-color: #FFDF87;
