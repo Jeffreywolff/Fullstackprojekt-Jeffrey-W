@@ -1,19 +1,17 @@
 module.exports = {
-    module: {
-      rules: [
-        // ... other rules omitted
-  
-        // this will apply to both plain `.scss` files
-        // AND `<style lang="scss">` blocks in `.vue` files
-        {
-          test: /\.scss$/,
-          use: [
-            'vue-style-loader',
-            'css-loader',
-            'sass-loader'
-          ]
-        }
-      ]
-    },
-    // plugin omitted
-  }
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
+    ],
+  },
+};

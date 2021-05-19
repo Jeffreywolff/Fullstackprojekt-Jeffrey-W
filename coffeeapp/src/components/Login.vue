@@ -81,7 +81,8 @@
     }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+
 
     #coffee-msg {
         margin-left: 50px;

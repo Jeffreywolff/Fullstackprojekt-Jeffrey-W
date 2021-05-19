@@ -433,7 +433,7 @@
     }
 </script>
 
-<style lang="css">
+<style lang="scss">
     .z-index-1 {
         z-index: 1;
     }

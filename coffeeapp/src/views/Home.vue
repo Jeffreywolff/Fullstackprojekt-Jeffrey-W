@@ -28,11 +28,11 @@ export default {
 }
 </script>
 
-<style scoped>
- 
+<style lang="scss">
+@import "@/scss/variables.scss";
 
  #nav{
-   background-color: #FFDF87;
+   background-color: $primary;
  }
 
 

@@ -34,7 +34,7 @@
 
     }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 
     form .form-floating{
         margin: 10px;

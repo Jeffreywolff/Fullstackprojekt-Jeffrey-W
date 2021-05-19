@@ -1,18 +1,32 @@
 // post.model.js
 
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
 
 // Define collection and schema for Post
-let Post = new Schema({
-  title: {
-    type: String
-  },
-  body: {
-    type: String
-  }
-},{
-    collection: 'posts'
-});
+let UserPost = new mongoose.Schema ({
+  email: String,
+  username: String,
+  password: String,
+  
+  collection: 'posts'
+})
 
-module.exports = mongoose.model('Post', Post);
+const User = mongoose.model('User', UserPost);
+
+exports.newUser = (email, username, password) => {
+  
+  var user = new User({
+    email: email,
+    username: username,
+    password: password,
+  });
+  
+  return user; 
+}
+
+
+
+exports.findUser = async () => {
+  const userFound = await User.find({});
+  return userFound;
+}

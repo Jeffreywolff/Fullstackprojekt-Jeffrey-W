@@ -8,7 +8,11 @@
 
         <div id="servers">
 
-          <div id="server-1">1</div>
+          <div id="server-1">1
+            <p>hello</p>
+
+          </div>
+          
           <div id="server-2">2</div>
           <div id="server-3">3</div>
 
@@ -36,3 +40,14 @@ export default {
   
 }
 </script>
+
+
+<style lang="scss" scoped>
+  #server-1{
+
+
+    p{
+      color: red;
+    }
+  }
+</style>

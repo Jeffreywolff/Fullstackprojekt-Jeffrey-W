@@ -18,8 +18,8 @@
   }
 </script>
 
-<style lang="css">
-  
+<style lang="scss">
+  @import "@/scss/variables.scss";
 
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
