@@ -1,22 +1,22 @@
 <template>
     <div class="container d-flex align-items-center justify-content-center">
         <main class="form-signin py-5">
-            <form method="POST" action="/createNewUser">
+            <form @submit.prevent="handleSubmitForm">
                 <img class="mb-4" src="../assets/coffee-circle.svg" alt="" width="82" height="82">
                 <h1 class="h3 mb-3 fw-normal">Create Account</h1>
 
 
                  <div class="form-floating">
-                    <input type="username" class="form-control" id="floatingInput" placeholder="Username">
+                    <input type="username" class="form-control" id="floatingInput" placeholder="Username" v-model="user.username" required>
                     <label for="floatingInput">Username</label>
                 </div>
 
                 <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" v-model="user.email" required>
                     <label for="floatingInput">Email address</label>
                 </div>
                 <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" v-model="user.password" required>
                     <label for="floatingPassword">Password</label>
                 </div>
 
@@ -30,8 +30,34 @@
     </div>
 </template>
 <script>
-    export default {
+    import axios from "axios";
 
+    export default {
+        data() {
+            return {
+                user: {
+                   username: '',
+                   email: '',
+                   password: ''
+                }
+            }
+        },
+        methods: {
+            handleSubmitForm() {
+                let apiURL = 'http://localhost:8000/create-user';
+                
+                axios.post(apiURL, this.user).then(() => {
+                  this.$router.push('/chat')
+                  this.user = {
+                    username: '',
+                    email: '',
+                    password: ''
+                  }
+                }).catch(error => {
+                    console.log(error)
+                });
+            }
+        }
     }
 </script>
 <style lang="scss" scoped>
