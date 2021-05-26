@@ -32,7 +32,7 @@ export default {
 @import "@/scss/variables.scss";
 
  #nav{
-   background-color: $primary;
+   background-color: #FFDF87;
  }
 
 

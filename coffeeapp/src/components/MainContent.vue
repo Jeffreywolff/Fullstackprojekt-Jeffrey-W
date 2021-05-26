@@ -473,4 +473,16 @@
         margin-top: 150px;
         height: 70vh;
     }
+
+    @font-face {
+        font-family: Heebo;
+        src: url('../assets/fonts/Heebo/static/Heebo-Medium.ttf');
+    }
+    h1{
+        font-family: Heebo;
+    }
+
+    p{
+        font-family: Heebo;
+    }
 </style>

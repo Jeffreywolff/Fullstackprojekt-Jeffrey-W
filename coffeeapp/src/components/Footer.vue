@@ -1,20 +1,10 @@
 <template>
     <footer class="">
             <div class="container-fluid row py-5">
-                <div id="footer-container" class="col-12 col-md">
-                    <p><strong>Links</strong></p>   
+                <div id="footer-container" class="">
+                    <p><strong>Remember to drink water!</strong></p>
                 </div>
-                <div id="footer-container" class="col-12 col-md">
-                    <p class=""><strong>Social</strong></p>  
-                    
-                    </div>
-                <div id="footer-container" class="col-12 col-md">
-                    <p><strong>Contact</strong></p>  
-
-                </div>
-                <div id="footer-container" class="col-12 col-md">
-                    <p><strong>About</strong></p>  
-                </div>
+                
             </div>
 
             <div class="container-fluid py-5">
@@ -40,13 +30,12 @@ export default {
     footer{
         
         background-color: rgb(35, 39, 42);
-        color: #CC1D32;
+        color: #F4E4A2;
     }
 
     #footer-container{
         height: 20vh;
-        border-right: 1px solid rgb(114, 114, 114);
-        border-left: 1px solid rgb(114, 114, 114);
+        
         
     }
 
