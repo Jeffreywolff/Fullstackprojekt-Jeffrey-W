@@ -1,13 +1,13 @@
 <template>
     <div>
-        <form action="/" method="post" class="d-flex align-items-center flex-column">
+        <form @submit.prevent="handleSubmitForm" class="d-flex align-items-center flex-column">
         
          <h2 class="card-title"> <strong>Account Login</strong></h2>
 
         <div id="input-container" class="">
             <div class="d-flex flex-column align-items-start">
             <label for="email">Email</label>
-            <input type="text" placeholder="">
+            <input type="text" placeholder="" v-model="user.email" required>
             </div>
             
             
@@ -17,7 +17,7 @@
             
             <div class="d-flex flex-column align-items-start">
             <label for="password">Password</label>
-            <input type="password" placeholder="">
+            <input type="password" placeholder="" v-model="user.password" required>
             </div>
             
         </div>
@@ -39,7 +39,31 @@
 
 <script>
 export default {
-    name: 'Form'
+    name: 'Form',
+
+    data() {
+            return {
+                user: {
+                   email: '',
+                   password: ''
+                }
+            }
+        },
+        methods: {
+            handleSubmitForm() {
+                let apiURL = 'http://localhost:8000/login';
+                
+                axios.get(apiURL, this.user).then(() => {
+                  this.$router.push('/')
+                  this.user = {
+                    email: '',
+                    password: ''
+                  }
+                }).catch(error => {
+                    console.log(error)
+                });
+            }
+        }
 }
 </script>
 

@@ -40,7 +40,26 @@ app.post('/create-user', async (req, res) => {
       req.body.password
     );
     await database.store(user);
-    res.redirect("/user");
+    res.redirect("/");
+  })
+
+  app.get('/login', async(req, res) => {
+
+    const userList = await userModel.findUser();
+    userList.forEach(user => {
+      if(user.username == req.body.username){
+        if(user.password == req.body.password){
+          res.redirect("/chat");
+        }
+        else{
+          res.redirect("/chat");
+        }
+      }
+      else{
+        console.log("nope");
+      }
+    });
+    
   })
 
 
