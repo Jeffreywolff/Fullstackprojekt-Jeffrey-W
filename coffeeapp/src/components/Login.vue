@@ -83,6 +83,30 @@
 
 <style lang="scss" scoped>
 
+    @font-face {
+    font-family: asap;
+    src: url('../assets/fonts/Asap/static/Asap-Medium.ttf');
+    }
+
+    @font-face {
+    font-family: asap-regular;
+    src: url('../assets/fonts/Asap/static/Asap-Regular.ttf');
+    }
+
+    *{
+        font-family: asap;
+    }
+    
+    @keyframes bgcGradient {
+        0% {
+            background-position: left;
+        }
+
+        100% {
+            background-position: right;
+        }
+    }
+
 
     #coffee-msg {
         margin-left: 50px;
@@ -102,7 +126,10 @@
         width: 100%;
         padding: 0;
         margin: 0;
-        background-color: #FFDF87;
+        background: rgb(206, 147, 107);
+        background: linear-gradient(315deg, rgba(206, 147, 107, 1) 0%, rgba(191, 126, 82, 1) 33%, rgba(153, 67, 52, 1) 100%);
+        background-size: 300%;
+        animation: bgcGradient 10s infinite alternate;
         /*
         background: rgb(24,126,240);
         background: linear-gradient(45deg, rgba(24,126,240,1) 0%, rgba(176,249,255,1) 100%); 
@@ -129,7 +156,10 @@
 
 
     #Coffeecup p {
-
+        border-radius: 2rem;
+        border-bottom-right-radius: 0px;
+        background-color: #80b5fb;
+        padding: 20px;
         color: #000;
         font-size: 1.3rem;
         position: absolute;

@@ -113,9 +113,11 @@
 
             <div id="description-1" class="">
                 <h1>For the Coffe fanatics</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo fugit corporis porro saepe
-                    aspernatur nobis incidunt veniam pariatur! Unde maiores repudiandae voluptates sit ut pariatur eius
-                    suscipit voluptate quibusdam?</p>
+                <p>Have question about the café's coffee or do you just express yourself better with it. Chating with
+                    like minded can both brighten
+                    your day or give you some help keeping it steady.
+                    
+                </p>
 
             </div>
 
@@ -134,9 +136,9 @@
         <div id="content-body2" class="d-flex flex-row justify-content-around align-items-center">
             <div id="description-2">
                 <h1>For book readers</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, omnis maiores quasi eius corporis
-                    pariatur repudiandae libero architecto praesentium nostrum id placeat, iure impedit? Tenetur in
-                    aliquid doloremque eius minima!</p>
+                <p> Book reader or not, asking for help is easier thru text. And having someone answer with interest feels wonderful!
+                    Simple, with by way, whose the for dropped reflection behavioural country, to have village towards
+                    that from flows of much in it people, time. With in with cannot relief. </p>
             </div>
 
             <span class="w-25 position-relative">
@@ -207,13 +209,13 @@
         </div>
 
         <div class="wave-38scNw invertedWave-2Uzmgv" aria-hidden="true">
-            <svg class="wave-1hkxOo" style="transform: rotate(180deg)" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <svg class="wave-1hkxOo" style="transform: rotate(180deg)" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 100" preserveAspectRatio="none">
                 <path class="wavePath-haxJK1"
                     d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z"
                     fill="#F6F6F6"></path>
             </svg>
-            </div>
+        </div>
 
         <div id="content-body3" class="d-flex flex-row justify-content-around align-items-center">
 
@@ -416,9 +418,12 @@
 
             <div id="description-2">
                 <h1>For everyone</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cupiditate consequatur dolore
-                    corporis officia sed saepe iure numquam error et incidunt illo ut perferendis magni nihil, aliquam
-                    illum, quia similique?</p>
+                <p> Humans are social creatures even if you are shy. And public café's are for everyone, so thats why everybody can
+                    use Coffee chat.
+                    Then set assignment. Word alphabet had and long bit way. Time. The primarily rationale government to
+                    relieved then simple, listen. Easier volume years; All she catch and were world his for from sat all
+                    to the which and monstrous his uninitiated the slogging watch consider pity want a that to latest
+                    doctor mouse back trust accuse thought.</p>
             </div>
 
         </div>
@@ -434,6 +439,21 @@
 </script>
 
 <style lang="scss">
+    @font-face {
+        font-family: asap;
+        src: url('../assets/fonts/Asap/static/Asap-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: asap-regular;
+        src: url('../assets/fonts/Asap/static/Asap-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: asap-bold;
+        src: url('../assets/fonts/Asap/static/Asap-Bold.ttf');
+    }
+
     .z-index-1 {
         z-index: 1;
     }
@@ -478,11 +498,12 @@
         font-family: Heebo;
         src: url('../assets/fonts/Heebo/static/Heebo-Medium.ttf');
     }
-    h1{
-        font-family: Heebo;
+
+    h1 {
+        font-family: asap-bold;
     }
 
-    p{
-        font-family: Heebo;
+    p {
+        font-family: asap;
     }
 </style>
