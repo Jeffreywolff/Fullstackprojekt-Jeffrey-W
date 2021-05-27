@@ -47,7 +47,7 @@
                 let apiURL = 'http://localhost:8000/create-user';
                 
                 axios.post(apiURL, this.user).then(() => {
-                  this.$router.push('/chat')
+                  this.$router.push('/')
                   this.user = {
                     username: '',
                     email: '',

@@ -21,17 +21,10 @@ const User = mongoose.model('users', newUserSchema);
 exports.newUser = (username, email, password) => {
 
     var newUser = new User({
-        username: {
-            type: String
-        },
-        email: {
-            type: String
-        },
-        password: {
-            type: String
-        },
-    }, {
-        collection: 'users'
+        username: username,
+        email: email,
+        password: password,
+     
     });
 
     return newUser;

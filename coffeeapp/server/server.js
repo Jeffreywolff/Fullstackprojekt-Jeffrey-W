@@ -14,6 +14,8 @@ app.use(express.urlencoded({
     extended: true
 }));
 
+app.use(express.json());
+
 // Connect mongoDB
 mongoose.Promise = global.Promise;
 mongoose.connect(database.db, {
@@ -32,8 +34,13 @@ app.use('/api', userAPI)
 
 app.post('/create-user', async (req, res) => {
 
-    let user = userModel.newUser(req.body.username, req.body.email, req.body.password);
+    const user = userModel.newUser(
+      req.body.username, 
+      req.body.email, 
+      req.body.password
+    );
     await database.store(user);
+    res.redirect("/user");
   })
 
 
